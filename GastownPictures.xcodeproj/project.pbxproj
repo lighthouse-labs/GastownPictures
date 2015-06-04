@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		28486A181B20AAE600678FBD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28486A171B20AAE600678FBD /* MapKit.framework */; };
+		28486A1A1B20AB8A00678FBD /* locations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 28486A191B20AB8A00678FBD /* locations.gpx */; };
+		28486A1D1B20ADB400678FBD /* LocationGram.m in Sources */ = {isa = PBXBuildFile; fileRef = 28486A1C1B20ADB400678FBD /* LocationGram.m */; };
 		284ED3601B20A9710090288E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 284ED35F1B20A9710090288E /* main.m */; };
 		284ED3631B20A9710090288E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 284ED3621B20A9710090288E /* AppDelegate.m */; };
 		284ED3661B20A9710090288E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284ED3651B20A9710090288E /* ViewController.m */; };
@@ -30,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		28486A171B20AAE600678FBD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		28486A191B20AB8A00678FBD /* locations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = locations.gpx; sourceTree = "<group>"; };
+		28486A1B1B20ADB400678FBD /* LocationGram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationGram.h; sourceTree = "<group>"; };
+		28486A1C1B20ADB400678FBD /* LocationGram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationGram.m; sourceTree = "<group>"; };
 		284ED35A1B20A9710090288E /* GastownPictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GastownPictures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284ED35E1B20A9710090288E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		284ED35F1B20A9710090288E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +104,8 @@
 				284ED36A1B20A9710090288E /* Images.xcassets */,
 				284ED36C1B20A9710090288E /* LaunchScreen.xib */,
 				284ED35D1B20A9710090288E /* Supporting Files */,
+				28486A1B1B20ADB400678FBD /* LocationGram.h */,
+				28486A1C1B20ADB400678FBD /* LocationGram.m */,
 			);
 			path = GastownPictures;
 			sourceTree = "<group>";
@@ -108,6 +115,7 @@
 			children = (
 				284ED35E1B20A9710090288E /* Info.plist */,
 				284ED35F1B20A9710090288E /* main.m */,
+				28486A191B20AB8A00678FBD /* locations.gpx */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 			files = (
 				284ED3691B20A9710090288E /* Main.storyboard in Resources */,
 				284ED36E1B20A9710090288E /* LaunchScreen.xib in Resources */,
+				28486A1A1B20AB8A00678FBD /* locations.gpx in Resources */,
 				284ED36B1B20A9710090288E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				284ED3661B20A9710090288E /* ViewController.m in Sources */,
+				28486A1D1B20ADB400678FBD /* LocationGram.m in Sources */,
 				284ED3631B20A9710090288E /* AppDelegate.m in Sources */,
 				284ED3601B20A9710090288E /* main.m in Sources */,
 			);

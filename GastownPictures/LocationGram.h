@@ -12,7 +12,7 @@
 @interface LocationGram : NSObject<MKAnnotation>
 
 @property(nonatomic, assign) CLLocationCoordinate2D coordinate;
-@property(strong, nonatomic) NSString *title;
+@property(copy, nonatomic) NSString *title;
 
 @property(copy, nonatomic) NSString *imageUrl;
 

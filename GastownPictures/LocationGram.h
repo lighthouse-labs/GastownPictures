@@ -16,4 +16,6 @@
 
 @property(copy, nonatomic) NSString *imageUrl;
 
+-(instancetype) initWithJson:(NSDictionary*)dict;
+
 @end

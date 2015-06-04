@@ -10,7 +10,7 @@
 #import <AFNetworking.h>
 #import "LocationGram.h"
 @interface ViewController ()<MKMapViewDelegate>{
-    NSMutableArray *_locations;
+
 }
 
 @end
@@ -38,21 +38,9 @@
          [self.gastownMapView removeAnnotations:self.gastownMapView.annotations];
         
         for (NSDictionary *dict in [responseObject objectForKey:@"data"]){
-            _locations = [[NSMutableArray alloc] init];
-            
-            LocationGram * marker =[[LocationGram alloc] init];
-            marker.title = [[dict objectForKey:@"user"] objectForKey:@"username"];
-            CLLocationCoordinate2D photoLocation;
-            photoLocation.latitude = [[[dict objectForKey:@"location"] objectForKey:@"latitude"] floatValue];
-            photoLocation.longitude = [[[dict objectForKey:@"location"] objectForKey:@"longitude"] floatValue];
-            marker.coordinate = photoLocation;
-            marker.imageUrl = [[[dict objectForKey:@"images"] objectForKey:@"standard_resolution"] objectForKey:@"url"];
-            
-            [_locations addObject:marker];
+            LocationGram * marker =[[LocationGram alloc] initWithJson:dict];
             [self.gastownMapView addAnnotation:marker];
         }
-
-       
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);

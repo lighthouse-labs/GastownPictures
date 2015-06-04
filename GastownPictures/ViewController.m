@@ -35,7 +35,7 @@
 
     [[AFHTTPRequestOperationManager manager] GET:@"https://api.instagram.com/v1/media/search?lat=49.281815&lng=-123.108219&client_id=531009644bc8430a8ac8404c7d713317" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
-        [self.gastownMapView removeAnnotations:self.gastownMapView.annotations];
+         [self.gastownMapView removeAnnotations:self.gastownMapView.annotations];
         
         for (NSDictionary *dict in [responseObject objectForKey:@"data"]){
             _locations = [[NSMutableArray alloc] init];
@@ -89,8 +89,6 @@
 
 - (void)mapView:(MKMapView *)mapView
 didSelectAnnotationView:(MKAnnotationView *)view{
-    
-    LocationGram *locGram = (LocationGram*)view;
     
     
 }
